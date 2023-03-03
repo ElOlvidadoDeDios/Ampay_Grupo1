@@ -30,7 +30,7 @@ Game::~Game()
 	}
 
 	// Deallocate the asteroid's model matrices
-	delete m_asteroid.meshes[0].GetModelMatIns();
+	//delete m_asteroid.meshes[0].GetModelMatIns();
 
 	// Release all audio files
 	ResourceManager::GetInstance().ReleaseAudioFiles();
