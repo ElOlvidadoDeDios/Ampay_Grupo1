@@ -33,7 +33,7 @@ void Debugger::DrawRay(glm::vec3& rayPos, glm::vec3& rayDir, Camera& cam)
 {
 	m_shader.ActivateProgram();
 
-	float vertices[] =
+		float vertices[] = 
 	{
 		rayPos.x, rayPos.y, rayPos.z,
 		rayPos.x, rayPos.y + 0.1f, rayPos.z,
@@ -49,6 +49,7 @@ void Debugger::DrawRay(glm::vec3& rayPos, glm::vec3& rayDir, Camera& cam)
 	glBindVertexArray(m_vao);
 	glDrawArrays(GL_TRIANGLES, 0, 3);
 	glBindVertexArray(0);
+
 
 	m_shader.DeactivateProgram();
 }
