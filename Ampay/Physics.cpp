@@ -62,7 +62,15 @@ void Physics::ProcessInput(Camera& cam, float dt, std::vector<SDL_Event> events)
 		//case SDL_MOUSEBUTTONUP:
 		//{
 		//	switch (i->button.button)
+		//	{
+		//	case SDL_BUTTON_LEFT:
+		//		m_castRay = false;
+		//		break;
 
+		//	default: break;
+		//	}
+		//	break;
+		//}
 		}
 	}
 }
