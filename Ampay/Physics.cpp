@@ -162,7 +162,7 @@ inline void Physics::OnEnemyHit(Enemy* enemy)
 {
 	Player::GetInstance().ReduceHealth(damage);
 
-	if (Player::GetInstance().GetHealth() > 0)
+	if (Player::GetInstance().GetHealth() > 0
 		Audio::GetInstance().PlaySound(Audio::GetInstance().GetSoundsMap().find("PlayerHit")->second);
 }
 
