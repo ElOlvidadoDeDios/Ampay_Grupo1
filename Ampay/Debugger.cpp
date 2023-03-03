@@ -13,7 +13,7 @@ void Debugger::Init(Camera& cam)
 {
 	m_shader.CreateProgram("res/Shaders/Debugger.vs", "res/Shaders/Debugger.fs");
 
-	float vertices[9];
+	float vertices[9]
 
 	// Configure buffers for debugger
 	glGenVertexArrays(1, &m_vao);
