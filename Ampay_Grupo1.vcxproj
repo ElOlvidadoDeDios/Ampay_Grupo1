@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ampay\Animation.cpp" />
+    <ClCompile Include="rest\Source.cpp" />
+    <ClCompile Include="res\Audio\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
