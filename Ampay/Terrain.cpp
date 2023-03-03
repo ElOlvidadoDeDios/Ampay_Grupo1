@@ -26,10 +26,6 @@ void Terrain::InitTerrain(char* vs, char* fs)
 	m_terrainTexture.GenerateMultipleTextures(images);
 }
 
-// -------------------
-// Author: Rony Hanna
-// Description: Function that reads a heightmap (a 2D grid of values) and sends the data to the GPU
-// -------------------
 void Terrain::LoadHeightmapImage(const char* FileName)
 {
 	m_pImage = SDL_LoadBMP(FileName);
