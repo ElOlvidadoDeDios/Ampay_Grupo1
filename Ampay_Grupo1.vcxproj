@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ampay\Animation.cpp" />
+    <ClCompile Include="Ampay\Engine.cpp" />
+    <ClCompile Include="Ampay\Framebuffer.cpp" />
     <ClCompile Include="rest\Source.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
