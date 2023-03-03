@@ -16,10 +16,6 @@ Terrain::Terrain() :
 	m_model = glm::translate(glm::vec3(m_terrainXPos, 0.0f, m_terrainZPos));
 }
 
-// -------------------
-// Author: Rony Hanna
-// Description: Destructor that deallocates allocated memory on the heap 
-// -------------------
 Terrain::~Terrain()
 {}
 
