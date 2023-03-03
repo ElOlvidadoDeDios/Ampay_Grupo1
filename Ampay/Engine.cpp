@@ -65,5 +65,5 @@ void Engine::LoadApplicationResources()
 		assert(bUnitTest);
 	}
 	 
-	ResourceManager::GetInstance().SetSkyboxTextureIDs();
+	ResourceManager::GetInstance().SetSkyboxTextureIDs()
 }
