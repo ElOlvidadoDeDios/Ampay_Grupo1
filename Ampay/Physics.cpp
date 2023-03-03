@@ -172,7 +172,7 @@ bool Physics::PointInSphere(Camera& cam, glm::vec3& other, float radius)
 	float distanceSq = std::pow(cam.GetCameraPos().x - other.x, 2) + std::pow(cam.GetCameraPos().y - other.y, 2) + std::pow(cam.GetCameraPos().z - other.z, 2);
 
 	// Check if the player is within the radius (if radius is bigger than point is inside circle) 
-	if (distanceSq < (radius * radius)
+	if (distanceSq < (radius * radius))
 	{
 		return true;
 	}
