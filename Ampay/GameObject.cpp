@@ -9,7 +9,7 @@ GameObject::~GameObject()
 	glDeleteVertexArrays(1, &m_vao);
 }
 
-void GameObject::SetTextureId(char* texId)
+void GameObject::SetTextureId(char* texId) 
 {
 	m_texId = texId;
 }
