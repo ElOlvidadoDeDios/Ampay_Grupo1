@@ -4,7 +4,7 @@
 Framebuffer::Framebuffer()
 {}
 
-Framebuffer::~Framebuffer()
+Framebuffer::~Framebuffer();
 {
 	glDeleteFramebuffers(1, &m_fbo);
 	glDeleteFramebuffers(1, &m_shadowFbo);
