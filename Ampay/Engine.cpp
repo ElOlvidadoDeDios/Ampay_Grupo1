@@ -61,8 +61,7 @@ void Engine::LoadApplicationResources()
 
 	for (auto i = 0; i < 6; ++i)
 	{
-		bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile(skyboxFaces.at(i), skyboxIDs.at(i)); 
-		assert(bUnitTest);
+		
 	}
 	 
 	ResourceManager::GetInstance().SetSkyboxTextureIDs()
