@@ -102,7 +102,7 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene)
 	std::vector<MeshTexture> textures;
 
 	for (GLuint i = 0; i < mesh->mNumVertices; i++)
-	{
+	{ 
 		MeshVertex vertex;
 		glm::vec3 vector;
 		vector.x = mesh->mVertices[i].x;
