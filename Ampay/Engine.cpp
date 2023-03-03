@@ -59,7 +59,7 @@ void Engine::LoadApplicationResources()
 
 	std::vector<char*> skyboxIDs = { "skybox", "skybox1", "skybox2", "skybox3", "skybox4", "skybox5" };
 
-	for 
+	for (auto i = 0; i < 6; ++i)
 	{
 		bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile(skyboxFaces.at(i), skyboxIDs.at(i)); 
 		assert(bUnitTest);
