@@ -58,7 +58,7 @@ void GameObject::CreateGameObj(std::vector<Vertex> verts, GLuint numOfVertices, 
 		vertexTan.push_back(verts[i].GetTangent());
 	}
 
-	glGenBuffers(TOTAL_BUFFERS, m_vbo);
+	glGenBuffers(TOTAL_BUFFERS, m_vbo); 
 
 	glBindBuffer(GL_ARRAY_BUFFER, m_vbo[POSITION_VB]);
 	glBufferData(GL_ARRAY_BUFFER, numOfVertices * sizeof(vertexPos[0]), &vertexPos[0], GL_STATIC_DRAW);
