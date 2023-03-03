@@ -41,7 +41,7 @@ void GameObject::CreateGameObj(std::vector<Vertex> verts, GLuint numOfVertices, 
 	std::vector<glm::vec3> vertexCol;
 	std::vector<glm::vec2> vertexUv;
 	std::vector<glm::vec3> vertexNorms;
-	std::vector<glm::vec3> vertexTan
+	std::vector<glm::vec3> vertexTan;
 
 	vertexPos.reserve(m_numOfVertices);
 	vertexUv.reserve(m_numOfVertices);
