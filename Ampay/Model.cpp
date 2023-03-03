@@ -75,7 +75,7 @@ void Model::loadModel(std::string path)
 	{
 		printf("ERROR: Unable to load model\n");
 		return;
-	}
+	} 
 
 	directory = path.substr(0, path.find_last_of('/'));
 	processNode(scene->mRootNode, scene);
