@@ -98,7 +98,7 @@ void Game::InitMeshes()
 	m_flagPole.Init("res/Models3D/FlagPole/Pole.obj", m_camera, "res/Shaders/SingleModelLoader.vs", "res/Shaders/SingleModelLoader.fs", false);
 	m_flagPole.SetSpotlight(true);
 
-	for (auto i = 0; i < 5; ++i)
+	/*for (auto i = 0; i < 5; ++i)
 	{
 		// Create mountain rock
 		Model mountainRock;
@@ -120,7 +120,7 @@ void Game::InitMeshes()
 
 		// Store newly created mountain rock in vector
 		m_mountainRocks.push_back(mountainRock);
-	}
+	}*/
 }
 
 void Game::InitLights()
