@@ -14,7 +14,7 @@ void Engine::Run()
 	m_game.Run();//que es un objeto de la clase que representa al juego en sí, para iniciar la lógica del juego
 }
 
-// Description: Function that loads external resources and uses unit testing to ensure that items were loaded 
+
 void Engine::LoadApplicationResources()
 {
 	bool bUnitTest;

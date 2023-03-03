@@ -15,7 +15,6 @@ void Debugger::Init(Camera& cam)
 
 	float vertices[9];
 
-	// Configure buffers for debugger
 	glGenVertexArrays(1, &m_vao);//Esta función genera un identificador para un nuevo objeto de matriz de vértices
 	glBindVertexArray(m_vao);//Esta función enlaza el objeto de matriz de vértices actual con el identificador especificado
 
