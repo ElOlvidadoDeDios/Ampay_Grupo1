@@ -127,7 +127,10 @@ bool Physics::RaySphere(Camera& cam, glm::vec3 RayDirWorld, double SphereRadius,
 		long double x1 = (-b - sqrt(b_squared_minus_4ac)) / (2.0 * a);
 		long double x2 = (-b + sqrt(b_squared_minus_4ac)) / (2.0 * a);
 
-		
+		if (x1 >= 0.0 || x2 >= 0.0)
+			return true;
+		if (x1 < 0.0 || x2 >= 0.0)
+			return true;
 	}
 
 	// No real roots
