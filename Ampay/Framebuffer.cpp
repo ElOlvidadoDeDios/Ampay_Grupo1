@@ -34,7 +34,7 @@ void Framebuffer::CreateFramebuffer()
 
 	// Ensure that the frame buffer is complete and ready to be used
 	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
-		printf("ERROR: Unable to create custom framebuffer.");
+		printf("ERROR: Unable to create custom framebuffer."); 
 
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
