@@ -356,10 +356,6 @@ float Terrain::BarryCentric(glm::vec3 p1, glm::vec3 p2, glm::vec3 p3, glm::vec2 
 	return l1 * p1.y + l2 * p2.y + l3 * p3.y;
 }
 
-// -------------------
-// Author: Rony Hanna
-// Description: Function that binds the terrain vertex array object (VAO) and draws its vertex data
-// -------------------
 void Terrain::Draw(Camera& _cam, DirectionalLight* directionLight, PointLight* lamp, SpotLight* spotlight)
 {
 	m_terrainShader.ActivateProgram();
