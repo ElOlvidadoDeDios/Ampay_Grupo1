@@ -13,7 +13,7 @@ void GameObject::SetTextureId(char* texId)
 {
 	m_texId = texId;
 }
-
+ 
 void GameObject::SetObjectId(int id)
 {
 	m_objId = id;
