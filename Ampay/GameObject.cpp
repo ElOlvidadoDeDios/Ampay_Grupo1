@@ -91,7 +91,7 @@ void GameObject::CreateGameObj(std::vector<Vertex> verts, GLuint numOfVertices, 
 	if (bInstancing)
 	{
 		// Note to self: Optimize rendering by doing some instancing stuff for the basic shapes here in the future
-	}
+	} 
 
 	glBindVertexArray(0);
 }
