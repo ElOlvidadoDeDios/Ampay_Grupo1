@@ -9,7 +9,7 @@ GLint Model::TextureFromFile(const char* path, std::string directory)
 	GLuint textureID;
 	glGenTextures(1, &textureID);
 
-	int width, height;
+	int width, height; 
 	unsigned char* image = SOIL_load_image(filename.c_str(), &width, &height, 0, SOIL_LOAD_RGB);
 	glBindTexture(GL_TEXTURE_2D, textureID);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
