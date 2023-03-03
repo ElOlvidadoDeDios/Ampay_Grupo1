@@ -56,7 +56,7 @@ void Model::DrawInstanced(Camera& cam)
 	{
 		meshes[i].Draw(cam, m_shader, true);
 	}
-}
+} 
 
 void Model::SetTransform(glm::vec3 pos, glm::vec3 rot, float rotAmountInDegrees, glm::vec3 scale)
 {
