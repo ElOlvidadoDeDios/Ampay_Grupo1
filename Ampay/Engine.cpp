@@ -18,6 +18,7 @@ void Engine::Run()
 void Engine::LoadApplicationResources()
 {
 	bool bUnitTest;
+	//para cargar una textura desde un archivo
 
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/cubeTex.png", "cubeTex"); assert(bUnitTest);
 	bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile("res/Textures/cubeTex_NormalMap.png", "cubeTexNormalMap"); assert(bUnitTest);
@@ -69,6 +70,5 @@ void Engine::LoadApplicationResources()
 		bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile(skyboxFaces.at(i), skyboxIDs.at(i)); 
 		assert(bUnitTest);
 	}
-	 
 	ResourceManager::GetInstance().SetSkyboxTextureIDs();
 }

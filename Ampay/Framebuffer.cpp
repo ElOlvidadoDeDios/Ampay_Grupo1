@@ -16,7 +16,6 @@ void Framebuffer::CreateFramebuffer()
 	glGenFramebuffers(1, &m_fbo);	
 	glBindFramebuffer(GL_FRAMEBUFFER, m_fbo);
 
-
 	// Crea una nueva textura vacía que se renderizará para luego adjuntarla al framebuffer
 	glGenTextures(1, &m_texture);
 	glBindTexture(GL_TEXTURE_2D, m_texture);

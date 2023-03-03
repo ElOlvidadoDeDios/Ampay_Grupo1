@@ -1,4 +1,3 @@
-// Note to self: Review this file and optimize where possible in the future if needed
 #include "Debugger.h"
 #include <vector>
 
