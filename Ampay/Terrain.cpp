@@ -19,10 +19,6 @@ Terrain::Terrain() :
 Terrain::~Terrain()
 {}
 
-// -------------------
-// Author: Rony Hanna
-// Description: Function that creates the terrain's shader program and initializes the terrain's textures
-// -------------------
 void Terrain::InitTerrain(char* vs, char* fs)
 {
 	m_terrainShader.CreateProgram(vs, fs);
