@@ -6,7 +6,7 @@ Debugger::Debugger() :
 	model(1.0f)
 {}
 
-Debugger::~Debugger()
+Debugger::~Debugger();
 {}
 
 void Debugger::Init(Camera& cam)
