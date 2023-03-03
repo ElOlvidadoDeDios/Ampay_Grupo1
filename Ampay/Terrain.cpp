@@ -130,10 +130,6 @@ void Terrain::LoadHeightmapImage(const char* FileName)
 	std::cout << "Terrain loaded successfully!\n";
 }
 
-// -------------------
-// Author: Rony Hanna
-// Description: Function that creates a heightmap (procedurally) using the Perlin Noise algorithm
-// -------------------
 void Terrain::CreateTerrainWithPerlinNoise()
 {
 	// Set the seed of the noise so that it is different every time
