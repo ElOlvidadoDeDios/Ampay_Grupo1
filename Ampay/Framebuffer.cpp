@@ -12,11 +12,12 @@ Framebuffer::~Framebuffer()
 
 void Framebuffer::CreateFramebuffer()
 {
-	// Create and bind the new custom framebuffer
+	// Crear y enlazar el nuevo framebuffer personalizado
 	glGenFramebuffers(1, &m_fbo);	
 	glBindFramebuffer(GL_FRAMEBUFFER, m_fbo);
 
-	// Create new empty texture that will be rendered to then attach it to the framebuffer
+
+	// Crea una nueva textura vacía que se renderizará para luego adjuntarla al framebuffer
 	glGenTextures(1, &m_texture);
 	glBindTexture(GL_TEXTURE_2D, m_texture);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, Renderer::GetInstance().GetWindowWidth(), Renderer::GetInstance().GetWindowHeight(), 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
@@ -25,14 +26,14 @@ void Framebuffer::CreateFramebuffer()
 	glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_texture, 0);
 	glBindTexture(GL_TEXTURE_2D, 0);
 
-	// Create render buffer to attach stencil and depth data to it 
+	// Crea un búfer de procesamiento para adjuntarle datos de plantilla y profundidad
 	glGenRenderbuffers(1, &m_rbo);
 	glBindRenderbuffer(GL_RENDERBUFFER, m_rbo);
 	glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, Renderer::GetInstance().GetWindowWidth(), Renderer::GetInstance().GetWindowHeight());
 	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, m_rbo);
 	glBindRenderbuffer(GL_RENDERBUFFER, 0);
 
-	// Ensure that the frame buffer is complete and ready to be used
+	// Asegúrese de que el búfer de trama esté completo y listo para usarse
 	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 		printf("ERROR: Unable to create custom framebuffer.");
 
@@ -41,11 +42,11 @@ void Framebuffer::CreateFramebuffer()
 
 void Framebuffer::CreateShadowFramebuffer()
 {
-	// Create and bind the new custom framebuffer
+	// Crear y enlazar el nuevo framebuffer personalizado
 	glGenFramebuffers(1, &m_shadowFbo);
 	glBindFramebuffer(GL_FRAMEBUFFER, m_shadowFbo);
 
-	// Create new empty texture that will store depth data for shadow calculation
+	// Crear una nueva textura vacía que almacenará datos de profundidad para el cálculo de sombras
 	glGenTextures(1, &m_depthTexture);
 	glBindTexture(GL_TEXTURE_2D, m_depthTexture);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT16, 1024, 1024, 0, GL_DEPTH_COMPONENT, GL_FLOAT, NULL);
@@ -58,7 +59,7 @@ void Framebuffer::CreateShadowFramebuffer()
 	glReadBuffer(GL_NONE);
 	glBindTexture(GL_TEXTURE_2D, 0);
 
-	// Ensure that the frame buffer is complete and ready to be used
+	// Asegúrese de que el búfer de trama esté completo y listo para usarse
 	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 		printf("ERROR: Unable to create custom framebuffer.");
 
