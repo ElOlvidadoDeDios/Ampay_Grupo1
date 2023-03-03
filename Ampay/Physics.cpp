@@ -11,8 +11,7 @@ Physics::Physics() :
 	m_collision(false)
 {}
 
-Physics::~Physics()
-{}
+
 
 void Physics::Update(Camera& cam, float dt, std::vector<SDL_Event> events, std::vector<Enemy*>& enemies)
 {
