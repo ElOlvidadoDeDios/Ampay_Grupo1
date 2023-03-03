@@ -378,10 +378,6 @@ void Terrain::Draw(Camera& _cam, DirectionalLight* directionLight, PointLight* l
 	m_terrainShader.SetMat4("projection", _cam.GetProjectionMatrix());
 	m_terrainShader.SetVec3("viewPos", _cam.GetCameraPos());
 
-	// ----------------------
-	// Lighting properties 
-	// ----------------------
-
 	// a. Directional Light
 	m_terrainShader.SetVec3("dirLight.direction", directionLight->GetDirection());
 	m_terrainShader.SetVec3("dirLight.ambient", directionLight->GetAmbient());
