@@ -48,7 +48,7 @@ void Model::Draw(Camera& cam, glm::vec3& pos, glm::vec3& rot, float amountOfRota
 	{
 		meshes[i].Draw(cam, m_shader, false, pos, rot, amountOfRotation, scale, bDrawRelativeToCamera, m_useSpotlight);
 	}
-}
+} 
 
 void Model::DrawInstanced(Camera& cam)
 {
