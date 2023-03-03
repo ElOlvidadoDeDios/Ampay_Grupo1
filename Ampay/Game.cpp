@@ -288,9 +288,9 @@ void Game::RenderScene()
 
 	Renderer::GetInstance().GetComponent(AMMO).Draw(m_cameraHUD);
 	Renderer::GetInstance().GetComponent(HEALTH).Draw(m_cameraHUD);
-	Renderer::GetInstance().GetComponent(SATURN_RINGS).Draw(m_camera);
-	Renderer::GetInstance().GetComponent(SATURN).GetTransformComponent().GetRot().y += 2.0f * m_deltaTime;
-	Renderer::GetInstance().GetComponent(SATURN).Draw(m_camera, glm::vec3(-700.0f, 700.0f, 0.0f));
+	//Renderer::GetInstance().GetComponent(SATURN_RINGS).Draw(m_camera);
+	//Renderer::GetInstance().GetComponent(SATURN).GetTransformComponent().GetRot().y += 2.0f * m_deltaTime;
+	//Renderer::GetInstance().GetComponent(SATURN).Draw(m_camera, glm::vec3(-700.0f, 700.0f, 0.0f));
 
 	m_asteroid.DrawInstanced(m_camera);
 
