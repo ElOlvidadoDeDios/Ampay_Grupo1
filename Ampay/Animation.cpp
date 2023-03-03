@@ -3,15 +3,15 @@
 const float WEAPON_ROTATION_190_DEG = 3.31613f;
 
 Animation::Animation() :
-	m_defWeaponRotation(WEAPON_ROTATION_190_DEG),
-	m_defWeaponZOffset(-2.5f),
-	m_originalWeaponZOffset(-2.5f),
-	m_sprintWeaponZOffset(-2.5f),
-	m_defWeaponYOffset(-2.0f),
-	m_idleYOffset(-2.0f),
-	m_weaponMoveForward(false),
-	m_weaponMoveUp(true),
-	m_swapping(false)
+	m_defWeaponRotation(WEAPON_ROTATION_190_DEG),//Se inicializa con el valor de una constante llamada WEAPON_ROTATION_190_DEG.
+	m_defWeaponZOffset(-2.5f),//Se inicializa con un valor de -2.5f.
+	m_originalWeaponZOffset(-2.5f),//Se inicializa con un valor de -2.5f.
+	m_sprintWeaponZOffset(-2.5f),//Se inicializa con un valor de -2.5f.
+	m_defWeaponYOffset(-2.0f),//Se inicializa con un valor de -2.0f.
+	m_idleYOffset(-2.0f),//Se inicializa con un valor de -2.0f.
+	m_weaponMoveForward(false),//Se inicializa con el valor falso (false).
+	m_weaponMoveUp(true),//Se inicializa con el valor verdadero (true).
+	m_swapping(false)//Se inicializa con el valor falso (false).
 {}
 
 Animation::~Animation()
