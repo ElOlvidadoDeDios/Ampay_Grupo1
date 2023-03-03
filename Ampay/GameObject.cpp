@@ -109,7 +109,7 @@ void GameObject::Draw(glm::mat4 model, Camera& cam, glm::vec3 lightPos)
 	glBindVertexArray(m_vao);
 	glDrawElements(GL_TRIANGLES, m_numOfIndices, GL_UNSIGNED_INT, nullptr);
 	glBindVertexArray(0);
-
+	 
 	this->shaderComponent.DeactivateProgram();
 }
 
