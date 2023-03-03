@@ -88,7 +88,7 @@ void Model::processNode(aiNode * node, const aiScene * scene)
 		aiMesh* mesh = scene->mMeshes[node->mMeshes[i]];
 		meshes.push_back(processMesh(mesh, scene));
 	}
-
+	 
 	for (GLuint i = 0; i < node->mNumChildren; i++)
 	{
 		processNode(node->mChildren[i], scene);
