@@ -87,7 +87,7 @@ void GameObject::CreateGameObj(std::vector<Vertex> verts, GLuint numOfVertices, 
 
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_vbo[ELEMENT_VB]);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, numOfIndices * sizeof(indices[0]), &indices[0], GL_STATIC_DRAW);
-
+	 
 	if (bInstancing)
 	{
 		// Note to self: Optimize rendering by doing some instancing stuff for the basic shapes here in the future
