@@ -347,10 +347,6 @@ float Terrain::GetHeightOfTerrain(float _X, float _Z)
 	return result;
 }
 
-// -------------------
-// Author: Rony Hanna
-// Description: Helper function used to find the height of a triangle the player is currently on
-// -------------------
 float Terrain::BarryCentric(glm::vec3 p1, glm::vec3 p2, glm::vec3 p3, glm::vec2 pos)
 {
 	float det = (p2.z - p3.z) * (p1.x - p3.x) + (p3.x - p2.x) * (p1.z - p3.z);
