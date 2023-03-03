@@ -304,10 +304,6 @@ glm::vec3 Terrain::CalculateNormal(unsigned int x, unsigned int z)
 	return glm::vec3(0.0f, 0.0f, 0.0f);
 }
 
-// -------------------
-// Author: Rony Hanna
-// Description: Function that gets the heights of the terrain grids
-// -------------------
 float Terrain::GetHeightOfTerrain(float _X, float _Z)
 {
 	float result = 0.0f;
