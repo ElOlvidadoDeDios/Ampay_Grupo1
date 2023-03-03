@@ -177,5 +177,5 @@ bool Physics::PointInSphere(Camera& cam, glm::vec3& other, float radius)
 		return true;
 	}
 
-	return false;
+	return false
 }
