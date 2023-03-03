@@ -16,17 +16,17 @@ void Debugger::Init(Camera& cam)
 	float vertices[9];
 
 	// Configure buffers for debugger
-	glGenVertexArrays(1, &m_vao);
-	glBindVertexArray(m_vao);
+	glGenVertexArrays(1, &m_vao);//Esta función genera un identificador para un nuevo objeto de matriz de vértices
+	glBindVertexArray(m_vao);//Esta función enlaza el objeto de matriz de vértices actual con el identificador especificado
 
-	glGenBuffers(1, &m_vbo);
-	glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), &vertices[0], GL_STREAM_DRAW);
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid*)0);
+	glGenBuffers(1, &m_vbo);//Esta función genera un identificador para un nuevo búfer de vértices
+	glBindBuffer(GL_ARRAY_BUFFER, m_vbo);//Esta función enlaza el objeto de búfer de vértices actual con el identificador especificado
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), &vertices[0], GL_STREAM_DRAW);//Esta función reserva y asigna memoria para el búfer de vértices actual
+	glEnableVertexAttribArray(0);//Esta función habilita un atributo de vértice especificado por su índice. En este caso, habilita el atributo de vértice 0.
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (GLvoid*)0);//Esta función define cómo se deben interpretar los datos del búfer de vértices para un atributo de vértice específico
 
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
-	glBindVertexArray(0);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);//Esta función desenlaza el objeto de búfer de vértices actual.
+	glBindVertexArray(0);//Esta función desenlaza el objeto de matriz de vértices actual.
 }
 
 void Debugger::DrawRay(glm::vec3& rayPos, glm::vec3& rayDir, Camera& cam)
