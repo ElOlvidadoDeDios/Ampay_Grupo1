@@ -14,10 +14,6 @@ void Engine::Run()
 	m_game.Run();
 }
 
-// -------------------
-// Author: Rony Hanna
-// Description: Function that loads external resources and uses unit testing to ensure that items were loaded 
-// -------------------
 void Engine::LoadApplicationResources()
 {
 	bool bUnitTest;
