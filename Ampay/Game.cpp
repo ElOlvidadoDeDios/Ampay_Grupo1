@@ -93,7 +93,7 @@ void Game::InitMeshes()
 	m_terrain.InitTerrain("res/Shaders/TerrainVertexShader.vs", "res/Shaders/TerrainFragmentShader.fs");
 	m_terrain.CreateTerrainWithPerlinNoise();
 
-	m_asteroid.Init("res/Models3D/Rock/LowPolyRock.dae", m_camera, "res/Shaders/InstancingVert.vs", "res/Shaders/InstancingFrag.fs", true);
+	//m_asteroid.Init("res/Models3D/Rock/LowPolyRock.dae", m_camera, "res/Shaders/InstancingVert.vs", "res/Shaders/InstancingFrag.fs", true);
  
 	m_flagPole.Init("res/Models3D/FlagPole/Pole.obj", m_camera, "res/Shaders/SingleModelLoader.vs", "res/Shaders/SingleModelLoader.fs", false);
 	m_flagPole.SetSpotlight(true);
