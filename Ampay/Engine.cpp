@@ -9,15 +9,12 @@ Engine::~Engine()
 
 void Engine::Run()
 {
-	LoadApplicationResources();
-	Renderer::GetInstance().Run(); 
-	m_game.Run();
+	LoadApplicationResources();//para cargar los recursos necesarios para ejecutar el juego
+	Renderer::GetInstance().Run();//para inicializar el renderizado y comenzar el ciclo principal del juego
+	m_game.Run();//que es un objeto de la clase que representa al juego en sí, para iniciar la lógica del juego
 }
 
-// -------------------
-// Author: Rony Hanna
 // Description: Function that loads external resources and uses unit testing to ensure that items were loaded 
-// -------------------
 void Engine::LoadApplicationResources()
 {
 	bool bUnitTest;
@@ -58,7 +55,15 @@ void Engine::LoadApplicationResources()
 	};
 
 	std::vector<char*> skyboxIDs = { "skybox", "skybox1", "skybox2", "skybox3", "skybox4", "skybox5" };
-
+	/*En cada iteración, se llama a la función LoadTextureImagesFromFile del objeto ResourceManager para cargar
+	una textura desde un archivo. Los argumentos de la función son la ruta del archivo de la textura
+	(skyboxFaces.at(i)) y el identificador de textura (skyboxIDs.at(i)). El valor de retorno de la función
+	se almacena en la variable bUnitTest, que luego se pasa como argumento a la función assert. La función
+	assert es una función de la biblioteca estándar de C++ que se utiliza para comprobar una expresión booleana.
+	Si la expresión es falsa, la función imprime un mensaje de error y finaliza el programa. En este caso, se
+	utiliza assert para comprobar si la carga de la textura fue exitosa. Si la carga falla, la función assert
+	detiene el programa y muestra un mensaje de error. En resumen, este bucle carga seis texturas para construir
+	un cubo de textura para el skybox del juego, y verifica si la carga de cada una fue exitosa.*/
 	for (auto i = 0; i < 6; ++i) 
 	{
 		bUnitTest = ResourceManager::GetInstance().LoadTextureImagesFromFile(skyboxFaces.at(i), skyboxIDs.at(i)); 

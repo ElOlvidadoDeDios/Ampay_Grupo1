@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="Ampay\Animation.cpp" />
     <ClCompile Include="Ampay\Debugger.cpp" />
+    <ClCompile Include="Ampay\Engine.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
