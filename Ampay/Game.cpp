@@ -254,7 +254,7 @@ void Game::RenderScene()
 	// Draw flag pole 
 	m_flagPole.Draw(m_camera, glm::vec3(256.0f, m_terrain.GetHeightOfTerrain(256.0f, 300.0f) + 10.0f, 270.0f));
 
-	// Draw big rocks around the corners
+	// Dibuja grandes rocas alrededor de las esquinas.
 	for (auto i : m_mountainRocks)
 		i.Draw(m_camera, false);
 
