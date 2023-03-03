@@ -174,7 +174,7 @@ bool Physics::PointInSphere(Camera& cam, glm::vec3& other, float radius)
 	// Check if the player is within the radius (if radius is bigger than point is inside circle) 
 	if (distanceSq < (radius * radius))
 	{
-		return true;
+		
 	}
 
 	return false;
