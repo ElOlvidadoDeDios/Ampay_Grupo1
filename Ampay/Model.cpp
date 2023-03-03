@@ -116,7 +116,7 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene)
 		vertex.m_Normal = vector;
 
 		if (mesh->mTextureCoords[0])
-		{
+		{ 
 			glm::vec2 vec;
 			vec.x = mesh->mTextureCoords[0][i].x;
 			vec.y = mesh->mTextureCoords[0][i].y;
