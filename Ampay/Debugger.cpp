@@ -51,5 +51,5 @@ void Debugger::DrawRay(glm::vec3& rayPos, glm::vec3& rayDir, Camera& cam)
 	glBindVertexArray(0);
 
 
-	m_shader.DeactivateProgram();
+	
 }
