@@ -6,10 +6,6 @@
 #include "ResourceManager.h"
 #include <iostream>
 
-// -------------------
-// Author: Rony Hanna
-// Description: Constructor that initializes terrain components 
-// -------------------
 Terrain::Terrain() :
 	m_fTerrainHeight(70.0f), m_cellSpacing(3.0f),
 	m_terrainLength(256), m_terrainWidth(256),
