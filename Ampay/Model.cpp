@@ -93,7 +93,7 @@ void Model::processNode(aiNode * node, const aiScene * scene)
 	{
 		processNode(node->mChildren[i], scene); 
 	}
-}
+} 
 
 Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene)
 {
