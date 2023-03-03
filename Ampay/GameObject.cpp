@@ -49,7 +49,7 @@ void GameObject::CreateGameObj(std::vector<Vertex> verts, GLuint numOfVertices, 
 	vertexNorms.reserve(m_numOfVertices);
 	vertexTan.reserve(m_numOfVertices);
 
-	for (size_t i = 0; i < numOfVertices; ++i)
+	for (size_t i = 0; i < numOfVertices; ++i) 
 	{
 		vertexPos.push_back(verts[i].GetPos());
 		vertexCol.push_back(verts[i].GetCol());
