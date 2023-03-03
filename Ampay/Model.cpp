@@ -31,7 +31,7 @@ void Model::Init(GLchar* path, Camera& camera, char* vs, char* fs, bool instanci
 	m_shader.CreateProgram(vs, fs);
 	m_camera = camera;
 	m_instancing = instancing;
-	loadModel(path);
+	loadModel(path); 
 }
 
 void Model::Draw(Camera& cam, bool bDrawRelativeToCamera)
