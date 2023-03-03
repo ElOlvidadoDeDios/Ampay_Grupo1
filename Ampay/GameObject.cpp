@@ -105,7 +105,7 @@ void GameObject::Draw(glm::mat4 model, Camera& cam, glm::vec3 lightPos)
 	this->shaderComponent.SetMat4("model", model);
 	this->shaderComponent.SetVec3("lightPos", lightPos);
 	this->shaderComponent.SetVec3("viewPos", cam.GetCameraPos());
-
+	 
 	glBindVertexArray(m_vao);
 	glDrawElements(GL_TRIANGLES, m_numOfIndices, GL_UNSIGNED_INT, nullptr);
 	glBindVertexArray(0);
