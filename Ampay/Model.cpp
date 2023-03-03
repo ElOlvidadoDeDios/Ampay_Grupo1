@@ -64,7 +64,7 @@ void Model::SetTransform(glm::vec3 pos, glm::vec3 rot, float rotAmountInDegrees,
 	m_rotation = rot;
 	m_rotationAngle = rotAmountInDegrees;
 	m_scale = scale;
-}
+} 
 
 void Model::loadModel(std::string path)
 {
